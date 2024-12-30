@@ -1,0 +1,77 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.formCtn{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.seat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.seat.available {
+  background-color: #4caf50;
+  color: white;
+}
+
+.seat.booked {
+  background-color: #ff9800;
+  color: white;
+}
+
+.booking-form {
+  margin: 20px 0;
+}
+
+.booking-form input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form button,
+.reset-button {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-form button:hover,
+.reset-button:hover {
+  background-color: #1769aa;
+}
