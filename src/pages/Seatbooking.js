@@ -99,7 +99,7 @@ const SeatBooking = () => {
         <h2>Ticket Booking</h2>
         <SeatGrid seats={seats}/> 
         <div className='left-child-1'>
-            <div className='booked-seats'>
+            <div className='booked-seat'>
               Booked Seats : {bookedSeats}
             </div>
             <div className='available-seats'>
